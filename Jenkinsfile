@@ -7,7 +7,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Checking out the code from GitHub...'
-                git 'https://github.com/shreejana012/spring-petclinic'
+                git branch: 'main', url: 'https://github.com/shreejana012/spring-petclinic.git'
             }
         }
         stage('Build') {
