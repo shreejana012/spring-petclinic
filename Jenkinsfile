@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        jdk 'OpenJDK 11'
+    }
     triggers {
         cron('H/3 * * * 4')
     }
